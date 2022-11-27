@@ -1,10 +1,12 @@
+package Humans;
+
 public class Human {
     private int yearOfBirth;
     public String name;
     private String town;
     public String jobTitle;
 
-    Human(String name, String town, String jobTitle, int yearOfBirth) {
+    public Human(String name, String town, String jobTitle, int yearOfBirth) {
         if (name == null || name.isBlank() || name.isEmpty()) {
             this.name = "Информация не указана";
         }else {
